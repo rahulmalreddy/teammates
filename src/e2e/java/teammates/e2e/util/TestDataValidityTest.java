@@ -176,7 +176,7 @@ public class TestDataValidityTest extends BaseTestCase {
     }
 
     private boolean isValidTestGoogleId(String googleId, String testPage) {
-        if (googleId == null || googleId.equals("")) {
+        if (googleId == null || "".equals(googleId)) {
             // Empty google ID is always acceptable
             return true;
         }
